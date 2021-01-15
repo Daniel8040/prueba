@@ -1,9 +1,207 @@
-<html>
+<!DOCTYPE html>
+<html lang="es">
+
 <head>
-<title> Inicio </title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Veterinaria Happy Pets</title>
+    <link rel="stylesheet" href="estilos.css">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&display=swap" rel="stylesheet">
+    <link href='https://unpkg.com/boxicons@2.0.5/css/boxicons.min.css' rel='stylesheet'>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
 </head>
+
 <body>
-<div> <p> Hola Mundo </p>
-</div>
+
+    <!--Cabecera y barra de navegación-->
+    <header class="header" id="inicio">
+        <img class="hamburguer" src="img/hamburguesa.svg" alt="">
+        <nav class="menu-navegacion">
+            <a href="#inicio">Inicio</a>
+            <a href="#servicio">Quiénes Somos</a>
+            <a href="#Carrusel CarouselExampleIndicators"> Nuestros Servicios</a>
+            <a href="#galeria">Imágenes </a>
+            <a href="#expertos">Clientes Felices</a>
+            <a href="#footer">Contacto</a>
+        </nav>
+        <div class="contenedor head">
+            <h1 class="titulo">Happy Pets</h1>
+            <h1 class="titulo">Clinica Veterinaria </h1>
+            <p class="copy">Al servicio de nuestras mascotas</p>
+        </div>
+    </header>
+
+    <!--Cuerpo principal-->>
+    <main>
+
+        <section class="services contenedor" id="servicio">
+            <h2 class="subtitulo">Quienes Somos</h2>
+            <div class="contenedor-servicio">
+                <img src="img/vet.jpg" alt="">
+                <div class="checklist-servicio">
+                    <div class="service">
+                        <h3 class="n-service"><span class="number">*</span>Fundacion</h3>
+                        <p> Los fundadores y directores técnicos de Happy Pets son el Dr. Daniel Bravo y Dr. Claudio Urrutia, profesionales egresados del Instituto Aplaplac, con más de 20 años de experiencia en clínica de pequeños animales.</p>
+
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <!--Galeria Carrusel-->
+        <section class="contenedor carousel-slide" id="Carrusel CarouselExampleIndicators">
+            <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+                <h2 class="subtitulo">Nuestros servicios</h2>
+                <ol class="carousel-indicators">
+                    <li data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"></li>
+                    <li data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"></li>
+                    <li data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"></li>
+                    <li data-bs-target="#carouselExampleCaptions" data-bs-slide-to="3"></li>
+                    <li data-bs-target="#carouselExampleCaptions" data-bs-slide-to="4"></li>
+                </ol>
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="img/farmacia_2.jpg" class="d-block w-100" alt="...">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h5>FARMACIA</h5>
+                            <p>Los mejores remedios que tu mascota necesite, los encontraras aca al mejor precio.</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="img/comida_2.jpg" class="d-block w-100" alt="...">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h5>ALIMENTOS</h5>
+                            <p>Las mejores comidas, con proteina y todos los elementos basicos y más.</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="img/vacuna_2.jpg" class="d-block w-100" alt="...">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h5>VACUNAS</h5>
+                            <p>Todas las vacunas que tu mascota necesite para que tenga una mejor salud.</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="img/cirugia_2.jpg" class="d-block w-100" alt="...">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h5>CIRUGÍAS</h5>
+                            <p>Si tu mascota necesita cirugia contamos con los mejores expertos.</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="img/camioneta_2.jpg" class="d-block w-100" alt="...">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h5>DOMICILIO</h5>
+                            <p>Si vives en zonas rurales o muy alejados, no te preoucupes, nosotros te visitaremos.</p>
+                        </div>
+                    </div>
+                </div>
+                <a class="carousel-control-prev" href="#carouselExampleCaptions" role="button" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </a>
+                <a class="carousel-control-next" href="#carouselExampleCaptions" role="button" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </a>
+            </div>
+        </section>
+
+
+
+
+
+        <!--Galería-->>
+        <section class="gallery" id="galeria">
+            <div class="contenedor">
+                <h2 class="subtitulo">Imágenes </h2>
+                <div class="contenedor-galeria">
+                    <img src="img/1.jpg" class="img-galeria" alt="">
+                    <img src="img/2.jpg" class="img-galeria" alt="">
+                    <img src="img/3.jpg" class="img-galeria" alt="">
+                    <img src="img/4.jpg" class="img-galeria" alt="">
+                    <img src="img/5.jpg" class="img-galeria" alt="">
+                    <img src="img/6.jpg" class="img-galeria" alt="">
+                </div>
+            </div>
+        </section>
+        <div class="imagen-light">
+            <img src="img/close.svg" alt="" class="close">
+            <img src="" alt="" class="agregar-imagen">
+        </div>
+
+        <!--Clientes de negocio-->>
+        <section class="contenedor" id="expertos">
+            <h2 class="subtitulo">Clientes Felices</h2>
+            <section class="experts">
+                <div class="cont-expert">
+                    <img src="img/c1.jpg" alt="">
+                    <h3 class="n-expert">Camila: "excelente atencion y servicio, muy recomendado!"</h3>
+                </div>
+                <div class="cont-expert">
+                    <img src="img/c2.jpg" alt="">
+                    <h3 class="n-expert">Andrea: "fui en busca de comprar alimentos para mi mascotas y los precios estan muy economicos " </h3>
+                </div>
+                <div class="cont-expert">
+                    <img src="img/c3.jpg" alt="">
+                    <h3 class="n-expert">Ignacia: "opere a mi perrito y fue todo un exito, ya esta sano y corriendo como loco"</h3>
+                </div>
+                <div class="cont-expert">
+                    <img src="img/c4.jpg" alt="">
+                    <h3 class="n-expert">Claudia: "vivo muy lejos y solicite servicio a domicilio, cumplieron a la hora que dijeron llegarian y fue una muy buena atencion"</h3>
+                </div>
+                <div class="cont-expert">
+                    <img src="img/c5.jpg" alt="">
+                    <h3 class="n-expert">Javiera: "lleve a vacunar a mi perrita , muy buena mano y atencion del veterniario. totalmente recomedado"</h3>
+                </div>
+            </section>
+        </section>
+
+
+
+    </main>
+
+    <!--Informaciones y contactos-->
+    <footer id="footer">
+        <div class="contenedor footer-content">
+            <div class="contact-us">
+                <h1>Contacto</h1>
+                <h2 class="brand">© Dr. Daniel Bravo | Dr. Claudio Urrutia</h2>
+                <p>Direccion: Av. Los palotes 386 | Viña del Mar</p>
+                <p>Fono: +569123456789</p>
+                <p>E-Mail: happypets@gmail.com </p>
+                <p>Escribenos tu consulta: </p>
+                <a href="form.html" target="_blank"><input type="button" value="Click aqui para consulta"> </a>
+
+
+
+            </div>
+
+            <div class="social-media">
+                <span>
+                    <a href="https://www.youtube.com/watch?v=7OgDOiWKPy4" target="_blank" class="social-media-icon">
+                        <i class='bx bxl-youtube'></i>
+                    </a>
+                <a href="https://es-la.facebook.com/ColegioMedicoVeterinarioDeChileAg/" target="_blank" class="social-media-icon">
+                    <i class='bx bxl-facebook'></i>
+                </a>
+                <a href="https://www.instagram.com/hcvceu/?hl=es-la" target="_blank" class="social-media-icon">
+                    <i class='bx bxl-instagram'></i>
+                </a>
+                <a href="https://twitter.com/colmevetchile?lang=es" target="_blank" class="social-media-icon">
+                    <i class='bx bxl-twitter'></i>
+                </a>
+            </span>
+            </div>
+        </div>
+        <div class="line"></div>
+    </footer>
+    <script src="js/menu.js"></script>
+    <script src="js/lightbox.js"></script>
+    <script src="js/valida.js"></script>
+
 </body>
+
 </html>

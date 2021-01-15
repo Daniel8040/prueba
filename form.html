@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Formulario de Contacto</title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</head>
+
+<body>
+    <div class="container-fluid">
+        <header class="row">
+            <div class="col-xs-12">
+                <img class="img-responsive" src="img/fondo.jpg">
+            </div>
+        </header>
+
+        <section class="row main clearfix">
+            <section class="col-xs-12 col-sm-6 izquierda">
+                <h1>Sé parte de nuestra gran comunidad del cuidado de nuestras mascotas</h1>
+                <br>
+                <h1> Información</h1>
+                <p>
+                    Direccion: Av. Los palotes 386 | Viña del Mar <br> Fono: +569123456789 <br> E-Mail: happypets@gmail.com
+                </p>
+            </section>
+            <section class="col-xs-12 col-sm-6 derecha">
+                <form name="form1" class="formulario" action="" method="#">
+                    <h3>Deje sus datos de contacto:</h3><br>
+                    <input type="text" id="nombre" name="nombre" placeholder="Nombre (requerido):" size="40" onblur="validarNombre()"><br><br>
+                    <input type="email" id="mail" name="mail" placeholder="E-mail (requerido):" size="40" onblur="validarCorreo()"><br><br>
+                    <input type="text" name="telefono" placeholder="Teléfono:" size="40"><br><br>
+                    <textarea rows="3" cols="38" placeholder="Mensaje:"></textarea><br><br>
+                    <input class="boton" type="submit" value="Enviar" onclick="validarFormulario()"><br><br>
+                </form>
+            </section>
+        </section>
+
+
+        <br>
+        <footer class="row">
+            <hr>
+            <span class="col-xs-12 cursiva centrar">Copyright 2021 © </span>
+        </footer>
+    </div>
+
+
+
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script src="js/script.js"></script>
+    <script src="js/valida.js"></script>
+
+</body>
+
+</html>
